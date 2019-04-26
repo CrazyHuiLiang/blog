@@ -1,5 +1,5 @@
 # 技术博客
 
-基于hexo生成的静态网站，主题是自己写的。
+基于hexo生成的静态网站，一点学习记录，访问请点击 “[crazyhuiliang.github.io](https://crazyhuiliang.github.io)”。
 
 
