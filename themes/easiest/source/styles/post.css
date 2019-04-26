@@ -1,0 +1,60 @@
+
+p {
+    line-height: 1.5em;
+}
+
+em {
+    background: #F8F8F8;
+    border-radius: 0.5em;
+    border: 1px solid #DDDDDD;
+    padding: 0 0.5em;
+}
+
+figure {
+    margin: 10px 0;
+    padding: 10px;
+    background: #2B2B2B;
+    color: white;
+}
+
+.gutter {
+    background: #313335;
+    color: #5A6366;
+    border-right: 1px solid #555555;
+    padding-right: 5px;
+}
+
+.code {
+    padding: 0 10px;
+}
+
+.line {
+    line-height: 1.5em;
+}
+
+.content {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+}
+
+.content>table {
+    border: 1px solid #DDDDDD;
+    border-collapse: collapse;
+}
+.content>table th,
+.content>table td,
+.content>table tr {
+    border: 1px solid #DDDDDD;
+    border-collapse: collapse;
+    padding: 0.5em;
+}
+
+.plain {
+    width: 100%;
+    overflow: auto;
+}
+
+.last-update {
+    /*margin: 20px 0 0 0;*/
+    font-size: 12px;
+}

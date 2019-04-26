@@ -1,0 +1,17 @@
+@import "reset.css";
+
+header {
+    border-bottom: #333333 double 1px;
+}
+
+body {
+    padding: 10px 10px;
+}
+
+.main {
+
+    width: 90vw;
+    max-width: 1200px;
+    margin:2vh auto;
+    padding: 10px;
+}

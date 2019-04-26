@@ -1,0 +1,10 @@
+<%- partial('partial/header') %>
+<%- css("/styles/index.css") %>
+
+<ul class="list-container">
+<% site.posts.forEach(function (page) { %>
+    <li>
+        <a href="<%= page.path %>"><%= page.title%> </a>
+    </li>
+<%})%>
+</ul>
