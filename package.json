@@ -5,6 +5,10 @@
   "hexo": {
     "version": "3.8.0"
   },
+  "scripts": {
+	"d": "npm run deploy",
+	"deploy": "./deploy.sh"
+  },
   "dependencies": {
     "hexo": "^3.8.0",
     "hexo-all-minifier": "^0.5.3",
