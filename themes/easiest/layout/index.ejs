@@ -1,10 +1,16 @@
+<style>
+	@import "/styles/index.css";
+</style>
+
 <%- partial('partial/header') %>
-<%- css("/styles/index.css") %>
 
 <ul class="list-container">
-<% site.posts.forEach(function (page) { %>
+<% site.posts.sort('date', -1).forEach(function (page) { %>
     <li>
-        <a href="<%= page.path %>"><%= page.title%> </a>
+        <a href="<%= page.path %>">
+			<strong class='title'><%= page.title%></strong>
+			<span class='date'><%- date(page.date, config.date_format) %></span>
+		</a>
     </li>
 <%})%>
 </ul>

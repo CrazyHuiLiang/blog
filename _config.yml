@@ -3,10 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: CrazyHuiLiang
+title: 编程小记
 subtitle: 记录所看所学，不断沉淀
 description: 前端技术
 author: CrazyHuiLiang 
+email: crazyhuiliang@163.com
 language: zh-Hans
 timezone: Asia/Shanghai
 

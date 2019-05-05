@@ -16,3 +16,16 @@
     text-decoration: none;
     color: #333;
 }
+
+.list-container a {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 350px) {
+	.date {
+		display: none;
+	}
+}

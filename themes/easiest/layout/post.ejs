@@ -1,13 +1,12 @@
-<%- css("/styles/post.css") %>
+<style>
+	@import "/styles/post.css";
+</style>
 
 <div class="content-page">
     <h1><%= page.title%> </h1>
-    <p>发布时间：<%- date(page.date, config.date_format) %></p>
-
-    <hr>
-    <div class="content">
+    <p class="create-time">发布时间：<%- date(page.date, config.date_format) %></p>
+    <article class="content">
         <%- page.content%>
-    </div>
-
+    </article>
     <p class="last-update">最后更新：<%- date(page.updated, config.date_format)%></p>
 </div>

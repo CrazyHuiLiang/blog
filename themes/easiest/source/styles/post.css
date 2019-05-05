@@ -1,3 +1,7 @@
+.create-time {
+	line-height: 50px;
+	border-bottom: 1px solid #ccc;
+}
 
 p {
     line-height: 1.5em;
@@ -37,6 +41,11 @@ figure {
     padding: 10px 0;
 }
 
+.content h2 {
+	margin-top: .5em;
+	line-height: 2em;
+}
+
 .content>table {
     border: 1px solid #DDDDDD;
     border-collapse: collapse;
@@ -55,6 +64,6 @@ figure {
 }
 
 .last-update {
-    /*margin: 20px 0 0 0;*/
+	line-height: 4em;
     font-size: 12px;
 }

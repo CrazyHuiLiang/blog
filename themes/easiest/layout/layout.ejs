@@ -6,10 +6,18 @@
 	<meta name="description" content="技术笔记 前端开发"/>
     <title><%- config.title %></title>
     <%- css("/styles/layout.css") %>
+	<%- css("/styles/reset.css") %>
 </head>
 <body>
     <div class="main">
         <%- body %>
     </div>
+	<footer class='site-footer'>
+		<section>
+		<p>欢迎交流</p>
+		<address>Email: <a href="mailto:<%- theme.email%>"><%- theme.email%></a></address>
+		<address>Github: <a href="<%- theme.github%>"><%- theme.github%></a></address>
+		</section>
+	</footer>
 </body>
 </html>
