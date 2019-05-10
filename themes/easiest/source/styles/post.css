@@ -40,10 +40,13 @@ figure {
     border-bottom: 1px solid #dddddd;
     padding: 10px 0;
 }
-
 .content h2 {
 	margin-top: .5em;
 	line-height: 2em;
+}
+
+.content>p {
+	margin-bottom: 1em;
 }
 
 .content>table {
