@@ -9,23 +9,23 @@
     height: 50px;
     line-height: 50px;
     list-style: none;
-
     border-bottom: 1px dotted #ccc;
 }
+
 .list-container a {
     text-decoration: none;
     color: #333;
 }
 
 .list-container a {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (max-width: 350px) {
-	.date {
-		display: none;
-	}
+    .date {
+        display: none;
+    }
 }

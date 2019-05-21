@@ -1,0 +1,76 @@
+.post-page {
+  .create-time {
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .content {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
+
+    em {
+      background: #F8F8F8;
+      border-radius: 0.5em;
+      border: 1px solid #DDDDDD;
+      padding: 0 0.5em;
+    }
+
+    .highlight {
+      width: 100%;
+      background-color: #f6f8fa;
+      margin: 10px 0;
+      overflow: auto;
+
+      .gutter {
+        display: none;
+      }
+
+      .prettyprint {
+        border: none;
+        //padding: 18px;
+      }
+
+      .code {
+        width: 100%;
+      }
+
+      .line {
+        line-height: 1.5em;
+
+      }
+    }
+
+
+    & >h2 {
+      margin-top: .5em;
+      line-height: 2em;
+
+    }
+
+    & >p {
+      margin-bottom: 1em;
+      line-height: 1.5em;
+    }
+
+    table {
+      width: 100%;
+      border: 1px solid #DDDDDD;
+      border-collapse: collapse;
+
+      th, td, tr {
+        border: 1px solid #DDDDDD;
+        border-collapse: collapse;
+        padding: 0.5em;
+      }
+    }
+
+    li {
+      list-style-position: inside;
+    }
+  }
+
+  .last-update {
+    line-height: 4em;
+    font-size: 12px;
+  }
+}
