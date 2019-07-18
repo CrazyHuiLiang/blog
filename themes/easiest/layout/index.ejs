@@ -3,10 +3,10 @@
 <ul class="list-container">
 <% site.posts.sort('date', -1).forEach(function (page) { %>
     <li>
-        <a href="<%= page.path %>">
-			<strong class='title'><%= page.title%></strong>
-			<span class='date'><%- date(page.date, config.date_format) %></span>
-		</a>
+        <a title="<%= page.title%>" href="<%= page.path %>">
+					<strong class='title'><%= page.title%></strong>
+					<span class='date'><%- date(page.date, config.date_format) %></span>
+				</a>
     </li>
 <%})%>
 </ul>

@@ -4,6 +4,7 @@
   "description": "a hexo theme",
   "scripts": {
     "start": "webpack --watch --hide-modules --progress --color",
+    "build": "webpack",
     "version": "webpack --version"
   },
   "author": "",
