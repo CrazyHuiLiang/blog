@@ -7,6 +7,8 @@
   },
   "scripts": {
     "start": "hexo s",
+	"dev": "hexo s --draft",
+	"start": "hexo s",
     "d": "npm run deploy",
     "deploy": "./deploy.sh"
   },
