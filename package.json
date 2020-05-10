@@ -3,17 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.8.0"
+    "version": "4.2.0"
   },
   "scripts": {
     "start": "hexo s",
-	"dev": "hexo s --draft",
-	"start": "hexo s",
+    "dev": "hexo s --draft",
     "d": "npm run deploy",
-    "deploy": "./deploy.sh"
+    "deploy": "./deploy.sh",
+    "clean": "hexo clean"
   },
   "dependencies": {
-    "hexo": "^3.8.0",
+    "hexo": "^4.2.0",
     "hexo-all-minifier": "^0.5.3",
     "hexo-deployer-git": "^0.2.0",
     "hexo-generator-archive": "^0.1.5",
