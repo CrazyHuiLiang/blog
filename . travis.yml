@@ -1,0 +1,18 @@
+sudo: false
+language: deploy-blog
+node_js:
+  - 12
+cache: npm
+branches:
+  only:
+    - master # build master branch only
+script:
+  - sh -xe deploy.sh
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  on:
+    branch: master
+  local-dir: public
