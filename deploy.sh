@@ -1,5 +1,5 @@
 rm -rf public
-hexo g
+npx hexo g
 cp deploy_files/* public
-hexo d
+npx hexo d
 
