@@ -1,86 +1,74 @@
 .post-page {
-  .create-time {
-    line-height: 50px;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .content {
-    border-bottom: 1px solid #dddddd;
-    padding: 10px 0;
-
-
-	img {
-	  max-width: 100%;
-	}
-
-	code {
-	  padding: 0 0.5em;
-	  border: 1px solid #ddd;
-	}
-    em {
-      background: #F8F8F8;
-      border-radius: 0.5em;
-      border: 1px solid #DDDDDD;
-      padding: 0 0.5em;
+    .create-time {
+        line-height: 50px;
+        border-bottom: 1px solid #ccc;
     }
+    .content {
+        border-bottom: 1px solid #dddddd;
+        padding: 10px 0;
 
-    .highlight {
-      width: 100%;
-      background-color: #f6f8fa;
-      margin: 10px 0;
-      overflow: auto;
+        img {
+            max-width: 100%;
+        }
+        code {
+            padding: 0 0.5em;
+            border: 1px solid #ddd;
+        }
+        em {
+            background: #F8F8F8;
+            border-radius: 0.5em;
+            border: 1px solid #DDDDDD;
+            padding: 0 0.5em;
+        }
+        .highlight {
+            width: 100%;
+            background-color: #f6f8fa;
+            margin: 10px 0;
+            overflow: auto;
 
-      .gutter {
-        display: none;
-      }
+            .gutter {
+                display: none;
+            }
+            .prettyprint {
+                border: none;
+                white-space: pre-wrap;
+                //padding: 18px;
+            }
+            .code {
+                width: 100%;
+            }
+            .line {
+                line-height: 1.5em;
+                tab-size: 4;
+            }
+        }
+        & > h2 {
+            margin-top: .5em;
+            line-height: 2em;
+        }
 
-      .prettyprint {
-        border: none;
-		white-space: pre-wrap;
-        //padding: 18px;
-      }
+        & > p {
+            margin-bottom: 1em;
+            line-height: 1.5em;
+        }
+        table {
+            width: 100%;
+            border: 1px solid #DDDDDD;
+            border-collapse: collapse;
 
-      .code {
-        width: 100%;
-      }
+            th, td, tr {
+                border: 1px solid #DDDDDD;
+                border-collapse: collapse;
+                padding: 0.5em;
+            }
+        }
 
-      .line {
-        line-height: 1.5em;
-				tab-size: 4;
-      }
+        li {
+            list-style-position: inside;
+        }
     }
-
-
-    & >h2 {
-      margin-top: .5em;
-      line-height: 2em;
-
+    .last-update {
+        line-height: 4em;
+        font-size: 12px;
     }
-
-    & >p {
-      margin-bottom: 1em;
-      line-height: 1.5em;
-    }
-
-    table {
-      width: 100%;
-      border: 1px solid #DDDDDD;
-      border-collapse: collapse;
-
-      th, td, tr {
-        border: 1px solid #DDDDDD;
-        border-collapse: collapse;
-        padding: 0.5em;
-      }
-    }
-
-    li {
-      list-style-position: inside;
-    }
-  }
-
-  .last-update {
-    line-height: 4em;
-    font-size: 12px;
-  }
 }
