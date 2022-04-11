@@ -6,17 +6,17 @@
     "version": "4.2.1"
   },
   "scripts": {
-    "new": "hexo new",
-    "new-draft": "hexo new draft",
-    "start": "hexo s --draft",
-    "publish-post": "hexo publish",
-    "preview-posts": "hexo s",
-    "deploy": "./deploy.sh",
-    "clean": "hexo clean"
+    "new": "hexo new draft",
+    "newp": "hexo new",
+    "d2p": "hexo publish",
+    "start": "hexo server --draft",
+    "preview-posts": "hexo server",
+    "clean": "hexo clean",
+    "deploy": "./deploy.sh"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo 'npm run deploy can deploy blog'"
+      "pre-commit": "echo 'npm run deploy' can deploy blog"
     }
   },
   "dependencies": {
