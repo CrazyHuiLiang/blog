@@ -1,20 +1,20 @@
 ---
-title: Macports使用简介
+title: MacPorts使用简介
 date: 2017-09-08 10:34:10
 tags: Mac
 ---
 
 安装
 --------
-[Macports](https://www.macports.org/)是一款供Mac系统的包管理器，主要用来安装软件，卸载软件更新软件等。继续阅读之前需要按照[官网](https://www.macports.org/install.php)指示安装Macports.
+[MacPorts](https://www.macports.org/)是一款供Mac系统的包管理器，主要用来安装软件，卸载软件更新软件等。继续阅读之前需要按照[官网](https://www.macports.org/install.php)指示安装MacPorts.
 
-如果使用官网提供的安装器安装，安装成功后，默认会将Macports拷贝到 */opt/local*,执行文件将放在*/opt/local/bin*,其他文件会放在*/opt/local/var/macports*,最后会把目录*/opt/local*通过配置文件*~/.profile*添加到环境变量中(PATH)中。
+如果使用官网提供的安装器安装，安装成功后，默认会将MacPorts拷贝到 */opt/local*,执行文件将放在*/opt/local/bin*,其他文件会放在*/opt/local/var/macports*,最后会把目录*/opt/local*通过配置文件*~/.profile*添加到环境变量中(PATH)中。
 
 可以通过:
 ```
 $ port version
 ```
-port是Macports的执行命令,上面的命令可以查看Macports的版本，如果成功输出如*Version: 2.4.1*滋字样，说明Macports已经安装成功了，否则就需要检查是否安装失败，或者环境变量添加失败。
+port是MacPorts的执行命令,上面的命令可以查看MacPorts的版本，如果成功输出如*Version: 2.4.1*滋字样，说明MacPorts已经安装成功了，否则就需要检查是否安装失败，或者环境变量添加失败。
 
 
 常用命令
@@ -25,7 +25,7 @@ port是Macports的执行命令,上面的命令可以查看Macports的版本，�
 $ man port
 $ man macports.conf
 ```
-Macports也提供了port help命令查看帮助文档:
+MacPorts也提供了port help命令查看帮助文档:
 ```
 查看port的帮助文档
 $ port help 
@@ -35,7 +35,7 @@ $ port help selfupdate
 ```
 
 **2. port selfupdate**
-port命令后跟selfupdate指令可以更新Macports、本地Portfiles（保存服务器port信息的数据库）(因此安装成功后就应该检查更新一次)。
+port命令后跟selfupdate指令可以更新MacPorts、本地Portfiles（保存服务器port信息的数据库）(因此安装成功后就应该检查更新一次)。
 ```
 $ sudo port selfupdate 
 ```
@@ -44,7 +44,7 @@ selfupdate后可跟参数：
 参数名 | 作用
 ------- | -------
 -d 	 | 开启debug模式，一旦命令执行错误，可以查看更多详细信息
---nosync |	只更新Macports本身，不更新本地数据库
+--nosync |	只更新MacPorts本身，不更新本地数据库
 
 
 **3. port diagnose**
@@ -65,7 +65,7 @@ $ port reclaim
 ```
 
 **5. port list**
-列出所有可以通过Macports安装的port的列表（不是已安装的列表）。
+列出所有可以通过MacPorts安装的port的列表（不是已安装的列表）。
 ```
 $ port list
 ```
@@ -150,8 +150,8 @@ $ sudo port uninstall <portname>
 
 参数名 | 作用
 ------- | -------
---follow-dependents 	|	Macports不会卸载还被依赖的port，此选项可以递归卸载安装，比如B 依赖A，卸载A默认是不可以的，使用此选项可以先卸载B，再卸载A。
---follow-dependencies	|	Macports不会卸载安装port时所安装的依赖，此选项可以卸载那些被卸载软件的依赖但并没有被其他软件所依赖的软件。
+--follow-dependents 	|	MacPorts不会卸载还被依赖的port，此选项可以递归卸载安装，比如B 依赖A，卸载A默认是不可以的，使用此选项可以先卸载B，再卸载A。
+--follow-dependencies	|	MacPorts不会卸载安装port时所安装的依赖，此选项可以卸载那些被卸载软件的依赖但并没有被其他软件所依赖的软件。
 -f						|(force)，强制卸载port，忽略软件间的依赖关系（尽量不要使用这个选项，除非你特别清楚你所做的操作）
 --no-exec				|卸载时不在触发事件监听，比如卸载时更新本地缓存将不会被执行。
 
@@ -176,8 +176,6 @@ $ port  contents <portname> | grep -E '/s?bin/'
 	M, MB
 	G, GB
 
-
-
 **14. port installed**
 列出已安装的软件及其变体，可以指定软件名，显示与所指定软件相关的安装。
 ```
@@ -185,12 +183,8 @@ $ port installed
 ```
 -v	显示安装的平台以及CPU等信息
 
-
-
 **15. port outdated**	
 列出所有版本已旧（已有新版本发布）的软件。
-
-
 
 **16. port upgrade**
 更新旧版本的已安装软件及其依赖，如：
@@ -202,15 +196,9 @@ $ port upgrade outdated
 更新所有旧版本已安装软件及其依赖，
 ```
 
-
 **17. port dependents**
 查询依赖已安装的指定软件的软件,比如：
 ```
 $ port dependents php56
 查询电脑中有哪些软件依赖php56
 ```
-
-
-
-
-

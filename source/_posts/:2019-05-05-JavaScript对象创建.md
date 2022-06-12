@@ -1,5 +1,5 @@
 ---
-title: js对象创建
+title: JavaScript对象创建
 comments: true
 date: 2019-05-05 22:21:23
 tags:
@@ -47,7 +47,7 @@ console.log(animalA.constructor, animalB.constructor); // Object() {}, Object() 
 
 ## 构造函数模式
 
-在js中，可以通过函数名前添加new操作符来创建对象。
+在JavaScript中，可以通过函数名前添加new操作符来创建对象。
 
 ```
 function Animal (name, age) {
@@ -71,7 +71,7 @@ console.log(animalA.run === animalB.run); // false
 
 ## 原型模式
 
-js函数具有一个prototype属性，使用函数名前加new操作符创建的实例内部会有一个[[prototype]]指针指向构造函数的prototype属性,访问实例的属性时会先对实例自身进行查找，如果查找不到会继续查找实例的[[prototype]]，查找仍然失败就继续查找[[prototype]]的[[prototype]]，依此规则持续进行直到查找成功或失败。所以，将属性放在函数的prototype属性上可以实现实例之间共享数据的效果。
+JavaScript函数具有一个prototype属性，使用函数名前加new操作符创建的实例内部会有一个[[prototype]]指针指向构造函数的prototype属性,访问实例的属性时会先对实例自身进行查找，如果查找不到会继续查找实例的[[prototype]]，查找仍然失败就继续查找[[prototype]]的[[prototype]]，依此规则持续进行直到查找成功或失败。所以，将属性放在函数的prototype属性上可以实现实例之间共享数据的效果。
 
 ```
 function Animal() {}

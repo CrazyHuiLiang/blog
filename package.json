@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "5.4.2"
+    "version": "6.2.0"
   },
   "scripts": {
     "new": "hexo new draft",
     "newp": "hexo new",
     "d2p": "hexo publish",
-    "start": "hexo server --draft",
-    "preview-posts": "hexo server",
+    "start": "hexo server",
+    "start-all": "hexo server --draft",
     "clean": "hexo clean",
     "build": "hexo generate",
     "deploy": "./deploy.sh"
