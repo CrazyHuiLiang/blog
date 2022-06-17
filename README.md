@@ -5,8 +5,9 @@
 ## 目录列表
 
 - [CentOS虚拟机无法连接网络](source/_posts/CentOS虚拟机无法连接网络.md)
-- [Macports使用简介](source/_posts/Macports.md)
-- [Hexo使用](source/_posts/:2019-04-25-Hexo使用.md)
+- [Ajax与跨域](source/_posts/:2017-02-13-Ajax与跨域.md)
+- [Macports使用简介](source/_posts/MacPorts使用简介.md)
+- [Hexo使用](source/_posts/:2019-04-25-Hexo使用简介.md)
 - [JavaScript对象创建](source/_posts/:2019-05-05-JavaScript对象创建.md)
 - [JavaScript继承](source/_posts/:2019-05-07-JavaScript继承.md)
 - [JavaScript正则](source/_posts/:2019-05-12-JavaScript正则.md)
