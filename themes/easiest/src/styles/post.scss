@@ -15,7 +15,6 @@
         }
         code {
             padding: 0 0.5em;
-            border: 1px solid #ddd;
         }
         em {
             background: #F8F8F8;
@@ -27,17 +26,22 @@
             width: 100%;
             background-color: #f6f8fa;
             margin: 10px 0;
+            border: 1px solid #ddd;
             overflow: auto;
 
             .gutter {
-                display: none;
+                //display: none;
+                position: absolute;
+                background: white;
+                margin-left: -1px;
             }
             .prettyprint {
                 border: none;
-                white-space: pre-wrap;
+                //white-space: pre-wrap;
                 //padding: 18px;
             }
             .code {
+                padding-left: 3em;
                 width: 100%;
             }
             .line {
@@ -74,6 +78,10 @@
             background: #eee;
             margin: 2em 0;
             padding: 1em;
+
+            p {
+                margin: 0.5em 0;
+            }
         }
     }
     .last-update {
