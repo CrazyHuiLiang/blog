@@ -69,6 +69,12 @@
         li {
             list-style-position: inside;
         }
+
+        blockquote {
+            background: #eee;
+            margin: 2em 0;
+            padding: 1em;
+        }
     }
     .last-update {
         line-height: 4em;
