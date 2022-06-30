@@ -32,3 +32,11 @@ yarn d2p <title> # 将草稿升级为文章，以备发布
 yarn clean # 清理本地构建的缓存
 yarn deploy  # 发布文章(posts)
 ```
+
+#### 引用资源
+
+```text
+eg: 图片
+{% asset_img evil.png 罪证 %}
+```
+
