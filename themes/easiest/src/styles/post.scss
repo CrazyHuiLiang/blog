@@ -3,12 +3,37 @@
         line-height: 50px;
         border-bottom: 1px solid #ccc;
     }
+
+
     h1,h2,h3,h4,h5 {
-        margin-block-start: 0.9em;
+        margin-block: 0.5em;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 34px;
+        font-weight: 900;
+    }
+    .post-title {
+        margin-block: 0;
     }
     .content {
         border-bottom: 1px solid #dddddd;
         padding: 10px 0;
+
+        >ol,>ul,>table {
+            margin-block: 0.5em;
+        }
 
         img {
             max-width: 100%;
@@ -49,10 +74,10 @@
                 tab-size: 4;
             }
         }
-        & > h2 {
-            margin-top: .5em;
-            line-height: 2em;
-        }
+        //& > h2 {
+        //    margin-top: .5em;
+        //    line-height: 2em;
+        //}
 
         & > p {
             margin-bottom: 1em;
@@ -72,6 +97,10 @@
 
         li {
             list-style-position: inside;
+
+            li {
+                margin-left: 2em;
+            }
         }
 
         blockquote {
